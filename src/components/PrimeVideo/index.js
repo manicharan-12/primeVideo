@@ -9,6 +9,10 @@ import {
   PrimeImage,
   MoviesContainer,
   MainHeading,
+  LargeDeviceContainer,
+  SmallDeviceContainer,
+  SmallDeviceImage,
+  FailureHeading,
 } from './styledComponent'
 
 const PrimeVideo = props => {
@@ -34,20 +38,32 @@ const PrimeVideo = props => {
   }
   return (
     <PrimeVideoContainer>
-      <PrimeImage
-        src="https://assets.ccbp.in/frontend/react-js/prime-video-img.png"
-        alt="prime video"
-      />
-      <MoviesContainer>
-        <MainHeading>Action Movies</MainHeading>
-        <Slider {...settings}>
-          {moviesList.map(eachMovie => renderActionCard(eachMovie))}
-        </Slider>
-        <MainHeading>Comedy Movies</MainHeading>
-        <Slider {...settings}>
-          {moviesList.map(eachMovie => renderComedyCard(eachMovie))}
-        </Slider>
-      </MoviesContainer>
+      <LargeDeviceContainer>
+        <PrimeImage
+          src="https://assets.ccbp.in/frontend/react-js/prime-video-img.png"
+          alt="prime video"
+        />
+        <MoviesContainer>
+          <MainHeading>Action Movies</MainHeading>
+          <Slider {...settings}>
+            {moviesList.map(eachMovie => renderActionCard(eachMovie))}
+          </Slider>
+          <MainHeading>Comedy Movies</MainHeading>
+          <Slider {...settings}>
+            {moviesList.map(eachMovie => renderComedyCard(eachMovie))}
+          </Slider>
+        </MoviesContainer>
+      </LargeDeviceContainer>
+      <SmallDeviceContainer>
+        <SmallDeviceImage
+          src="https://res.cloudinary.com/djovsq3xl/image/upload/v1685868916/flat-construction-template_23-2147739035-removebg-preview_eomg4m.png"
+          alt="failure-view"
+        />
+        <FailureHeading>
+          The page for the devices &lt;992px width is UNDER CONSTRUCTION. Please
+          use the devices having width &gt;992px.
+        </FailureHeading>
+      </SmallDeviceContainer>
     </PrimeVideoContainer>
   )
 }
