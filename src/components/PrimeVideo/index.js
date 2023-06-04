@@ -13,6 +13,7 @@ import {
   SmallDeviceContainer,
   SmallDeviceImage,
   FailureHeading,
+  SPANELEMENT,
 } from './styledComponent'
 
 const PrimeVideo = props => {
@@ -60,8 +61,9 @@ const PrimeVideo = props => {
           alt="failure-view"
         />
         <FailureHeading>
-          The page for the devices &lt;992px width is UNDER CONSTRUCTION. Please
-          use the devices having width &gt;992px.
+          The page for the devices &lt;992px width is{' '}
+          <SPANELEMENT>UNDER CONSTRUCTION.</SPANELEMENT> Please use the devices
+          having width &gt;992px.
         </FailureHeading>
       </SmallDeviceContainer>
     </PrimeVideoContainer>
