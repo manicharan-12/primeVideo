@@ -44,3 +44,6 @@ export const FailureHeading = styled.p`
   padding: 24px;
   text-align: center;
 `
+export const SPANELEMENT = styled.span`
+  color: #eb4034;
+`
