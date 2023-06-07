@@ -57,7 +57,7 @@ const PrimeVideo = props => {
       </LargeDeviceContainer>
       <SmallDeviceContainer>
         <SmallDeviceImage
-          src="https://res.cloudinary.com/djovsq3xl/image/upload/v1685868916/flat-construction-template_23-2147739035-removebg-preview_eomg4m.png"
+          src="https://res.cloudinary.com/djovsq3xl/image/upload/v1686113523/giphy-unscreen_1_online-video-cutter.com_fkuyet.gif"
           alt="failure-view"
         />
         <FailureHeading>
