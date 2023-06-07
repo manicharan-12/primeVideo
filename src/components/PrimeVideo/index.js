@@ -62,7 +62,7 @@ const PrimeVideo = props => {
         />
         <FailureHeading>
           The page for the devices &lt;992px width is{' '}
-          <SPANELEMENT>UNDER CONSTRUCTION.</SPANELEMENT> Please use the devices
+          <SPANELEMENT>UNDER DEVELOPMENT.</SPANELEMENT> Please use the devices
           having width &gt;992px.
         </FailureHeading>
       </SmallDeviceContainer>
